@@ -1,0 +1,2 @@
+class Superman < ApplicationRecord
+end

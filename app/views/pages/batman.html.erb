@@ -1,2 +1,18 @@
 <h1>I AM BATMAN!</h1>
 <%= image_tag "batman.png" %>
+
+<section>
+  <%= form_tag(pages_save_user_path)do %>
+  <div class ="field">
+    <%= label_tag "name", "Nombre" %>
+    <%= text_field_tag(:name) %>
+  </div>
+  <div class ="field">  
+    <%= email_field_tag(:email) %>
+    <%= label_tag "email", "Email" %>
+  </div>
+  <ul class ="actions">
+    <li><%= submit_tag("Send Form") %>
+    </ul>
+    <% end %>
+</section>   

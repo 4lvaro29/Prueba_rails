@@ -1,8 +1,4 @@
-<h1>THIS LOOKS LIKE A JOB FOR SUPERMAN</h1>
-
-<%= image_tag "superman.png" %>
-
-<section>
+ <section>
   <%= form_tag(pages_save_user_path)do %>
   <div class ="field">
     <%= label_tag "name", "Nombre" %>
@@ -11,6 +7,10 @@
   <div class ="field">  
     <%= email_field_tag(:email) %>
     <%= label_tag "email", "Email" %>
+  </div>
+  <div class="field">
+    <%= number_field_tag(:age) %>
+    <%= label_tag "age", "Edad" %>
   </div>
   <ul class ="actions">
     <li><%= submit_tag("Send Form") %>
